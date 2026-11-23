@@ -1,6 +1,6 @@
 {
   "name": "tooling-systems",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Node.js + MongoDB task API with per-environment configuration (staging, preprod, prod)",
   "type": "module",
   "main": "src/server.js",
