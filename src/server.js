@@ -1,7 +1,8 @@
 import { createApp } from './app.js';
+import { loadConfig } from './config/index.js';
 
-const port = Number(process.env.PORT ?? 3000);
+const config = await loadConfig();
 
-createApp().listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+createApp().listen(config.port, () => {
+  console.log(`[${config.env}] Server listening on port ${config.port}`);
 });

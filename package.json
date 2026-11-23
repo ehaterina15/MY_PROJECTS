@@ -9,7 +9,10 @@
   },
   "scripts": {
     "start": "node src/server.js",
-    "dev": "cross-env NODE_ENV=staging node --watch src/server.js",
+    "start:staging": "cross-env NODE_ENV=staging node src/server.js",
+    "start:preprod": "cross-env NODE_ENV=preprod node src/server.js",
+    "start:prod": "cross-env NODE_ENV=prod node src/server.js",
+    "dev":"cross-env NODE_ENV=staging node --watch src/server.js",
     "lint": "eslint .",
     "test": "echo \"No tests yet\"",
     "prepare": "husky"
